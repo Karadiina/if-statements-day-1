@@ -15,18 +15,24 @@ int main()
 	int value;
 	std::cin >> value;
 
-	if (value < 3) {
-		std::cout << "Insufficient privileges to use this menu option. " << std::endl;
+	if (value == 1) {
+		std::cout << "Opening file..." << std::endl;
+	}
+	else if (value == 2) {
+		std::cout << "Copying file..." << std::endl;
+	}
+	else if (value == 3) {
+		std::cout << "Deleting file..." << std::endl;
+	}
+	else if (value == 4) {
+		std::cout << "Sending file..." << std::endl;
+	}
+	else if (value == 5) {
+		std::cout << "Quiting .... " << std::endl;
 	}
 	else {
-		std::cout << "Privilage level sufficient. " << std::endl;
+		std::cout << "Invalid otion..." << std::endl;
 	}
-
-	if (value == 5) {
-		std::cout << "Quitting .... " << std::endl;
-	}
-	else {
-		std::cout << "Not quiting." << std::endl;
-	}
+	
 
 }
